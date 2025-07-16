@@ -21,10 +21,10 @@ Make sure you run this command from the root folder that contains the `pyproject
 ## Example Usage
 
 ```python
-from dsutilbox.preprocessing import fill_missing
+from dsutilbox.preprocessing import fill_missing_num_cols
 
 # Example
-df = fill_missing(df, strategy="mean")
+df = fill_missing_num_cols(df, strategy="mean")
 model = train_logistic(X_train, y_train)
 ```
 
