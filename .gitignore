@@ -1,0 +1,67 @@
+# ----------------------
+# Python cache & metadata
+# ----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ----------------------
+# Virtual environments
+# ----------------------
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+.venv.bak/
+
+# ----------------------
+# Packaging & dist
+# ----------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# ----------------------
+# Logs, outputs, and coverage
+# ----------------------
+*.log
+*.tmp
+*.out
+coverage.xml
+*.coverage
+.cache/
+.tox/
+
+# ----------------------
+# Jupyter & notebooks
+# ----------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ----------------------
+# OS / Editor files
+# ----------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ----------------------
+# pipenv / poetry / other
+# ----------------------
+pip-log.txt
+poetry.lock
+*.lock
+
+# ----------------------
+# Credentials / environment config (DO NOT COMMIT if used)
+# ----------------------
+.env
+.env.*
