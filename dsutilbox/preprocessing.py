@@ -10,3 +10,21 @@ def fill_missing_num_cols(df, strategy="mean"):
         else:
             raise ValueError("Unsupported strategy")
     return df
+
+
+def check_missing_perc(df, only_missing=True):
+    missing_pct = df.isnull().mean() * 100
+    column_types = df.dtypes
+
+    missing_info = pd.DataFrame({
+        'Missing Percentage': missing_pct,
+        'Data Type': column_types
+    })
+
+    if only_missing:
+        missing_info = missing_info[missing_info['Missing Percentage'] > 0]
+
+    missing_info = missing_info.sort_values(
+        by='Missing Percentage', ascending=False)
+
+    return missing_info

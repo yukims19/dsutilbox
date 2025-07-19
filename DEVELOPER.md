@@ -64,7 +64,7 @@ pytest tests/test_preprocessing.py
 
 ## 🏷️ Releasing to PyPI
 
-1. Bump the version in `pyproject.toml`.
+1. Bump the version in `pyproject.toml` and `__init__.py`.
 
 2. Commit, tag, and push:
 
